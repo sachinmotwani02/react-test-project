@@ -1,0 +1,204 @@
+body{
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  z-index: 100;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.stories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.story-card {
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.story-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.story-content {
+  margin-top: 10px;
+}
+
+.story-content p {
+  margin-bottom: 10px;
+}
+
+/* App.css */
+.story-details {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.story-details h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.story-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex-basis: 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tab h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tab p {
+  margin-bottom: 10px;
+}
+
+.tab ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab li {
+  margin-bottom: 5px;
+}
+
+.loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #333; */
+  color: #fff;
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar-links a {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-signup button {
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #8A2BE2, #00BFFF);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.storylist-contain{
+  width: 100vw;
+  margin-top: 200px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 70vh; /* Adjust to your preference */
+  z-index: 0; /* Ensure background stays behind other content */
+  /* background-image: url('your-background-image.jpg'); */
+  background-size: cover;
+  background-position: center bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  background-color: rgba(0,0,0,0.5);
+}
